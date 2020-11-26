@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="input">
+        <form id="inputForm">
+            <p><span>Username </span><input type="text" name="user" size = 20></p>
+            <p><span>Password </span><input type="password" name="pass" size = 20></p>
+            <input type="submit" value="submit" onclick="checkInput()">
+        </form>
+
+        <!--Do không nộp được file js lên e viết js ở trong luôn ạ -->
+        <script type="text/javascript">
+            function checkInput() {
+                var error = false;
+                var user = document.getElementById("inputForm").user.value;
+                var pass = document.getElementById("inputForm").pass.value;
+                var regexEmptyString = /^\s*$/;
+                var regexPasswordLength = /^.{6,}$/;
+                if (regexEmptyString.test(user)) {
+                    alert("Missing email");
+                    error = true;
+                }
+                if (regexEmptyString.test(pass) && error == false) {
+                    alert("Missing password!");
+                    error = true;
+                }
+                if (!regexPasswordLength.test(pass) && error == false) {
+                    alert("Password is too short, please input at Least 6 characters!!");
+                    error = true;
+                }
+                if (error == false) {
+                    alert('Login successfully !!!');
+                }
+            }
+        </script>
+
+    </div>
+
+</body>
+
+</html>

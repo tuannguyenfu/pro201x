@@ -1,0 +1,13 @@
+.row1{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.col1 {
+    padding: 5px;
+}
+
+.col1 div {
+    background-color: blue;
+}
+

@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Assignment 3</title>
-    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body onload="welcome()">
@@ -12,7 +11,45 @@
     <p id="name" onfocus="inputName()"></p>
     <p id="city"> </p>
     <p id="mobile"></p>
-    <button id="next" style="display: none;"  >Next step</button>
+    <button id="next" style="display: none;">Next step</button>
+    <script type="text/javascript">
+        var isHidden = "hidden";
+
+        var btnNext = document.getElementById("next");
+
+        function welcome() {
+            sayHello();
+            document.getElementById("next").style.display = "block";
+        }
+
+        function sayHello() {
+            alert("Welcome to the first JavaScript!");
+            setInterval(inputName(), 1000);
+        }
+
+        function sayGoodbye() {
+            alert("Thank you for providing information!");
+        }
+
+        function inputName() {
+            var name = prompt("Please enter your name");
+            document.getElementById("name").innerHTML = "Full Name: <b>" + name + "</b>";
+            inputCity();
+        }
+
+        function inputCity() {
+            var city = prompt("Please enter your city");
+            document.getElementById("city").innerHTML = "City: <b>" + city + "</b>";
+            inputPhone();
+        }
+
+        function inputPhone() {
+            var phone = prompt("Please enter your phone number");
+            document.getElementById("mobile").innerHTML = "Mobile: <b>" + phone + "</b>";
+            sayGoodbye();
+        }
+
+    </script>
 </body>
 
 </html>
