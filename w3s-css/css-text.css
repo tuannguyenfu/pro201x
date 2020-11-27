@@ -1,0 +1,72 @@
+/* 
+    TEXT COLOR
+        - The color property is used to set the color of the text
+        body {
+            color: blue;
+        }
+
+    CSS TEXT ALIGNMENT
+    The text-align property is used to set the horizontal alignment of a text
+    A text can be left or right aligned, centered, or justified
+    EX:
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: left;
+        }
+        h3 {
+            text-align: right;
+        }
+
+        h4 {
+            text-align: justify;
+        }
+
+    CSS TEXT DIRECTION
+        The direction and unicode-bidi properties can be used to change the text direction of an element
+        p {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+    VERTICAL ALIGNMENT  (Control content by vertical)
+        The vertical-align property sets the vertical alignment of an element.
+        This example demonstrates how to set the vertical alignment of an image in a text:
+        img.top {
+            vertical-align: top;
+        }
+
+        img.middle {
+            vertical-align: middle;
+        }
+
+        img.bottom {
+            vertical-align: bottom;
+        }
+
+
+        CSS TEXT DECORATION
+            Text Decoration
+                The text-decoration property is used to set or remove decorations from text.
+
+                The value text-decoration: none; is often used to remove underlines from links:
+                a {
+                    text-decoration: none;
+                }
+
+        CSS TEXT TRANSFORMATION
+        Text Transformation
+            The text-transform property is used to specify uppercase and lowercase letters in a text.
+            It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:
+            Ex: 
+            p.uppercase {
+                text-transform: uppercase;
+            }
+            p.lowercase {
+                text-transform: lowercase;
+            }
+            p.capitalize  {
+                text-transform: capitalize;
+            }
+*/

@@ -1,0 +1,69 @@
+/* 
+The CSS background properties are used to define the background effects for elements
+*/
+
+/* CSS BACKGROUND-COLOR
+body {
+    background-color: white;
+} 
+
+-Opacity / Transparency
+The opacity property specifies the opacity / transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent: 
+div {
+    background-color: green;
+    opacity: 0.3;
+}
+Note: When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read.
+==> To fix that using RGBA
+div {
+    background-color: rgba(120,80,23,0.1);
+}
+*/
+
+/* CSS Background Image
+body {
+    background-image: url("");
+}
+
+* Background-repeat
+- By default, the background-image property repeats an image both horizontally and vertically.
+If you will image is repeated only horizontally (background-repeat: repeat-x;).
+Body{
+    background-image: url("");
+    background-repeat: repeat-x;
+}
+
+CSS background-repeat: no-repeat
+body {
+    background-image: url("");
+    background-repeat: no-repeat;
+}
+
+CSS background-position
+body {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+CSS background-attachment
+Background fixed
+body {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+Background scroll
+body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
+}
+
+CSS Background Shorthand
+body {
+    background: #ffffff url("img_tree.png") no-repeat right top;
+}
+*/

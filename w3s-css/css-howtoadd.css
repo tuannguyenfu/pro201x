@@ -1,0 +1,65 @@
+/* Three Ways to Insert CSS
+    - External CSS
+    - Internal CSS
+    -
+*/
+
+/* External CSS*/
+/* 
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" href="abc.css">
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <p>Something</p>
+    </body>
+    </html>
+*/
+
+
+/* Internal CSS*/
+/* 
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+        <style>
+        ... Some style here
+        </style>
+    </head>
+    <body>
+        ...Some content
+    </body>
+    </html>
+*/
+
+/* Inline CSS*/
+/* 
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+    </head>
+    <body>
+        ...Some content With css inside
+        <p style="color:red;"></p>
+    </body>
+    </html>
+*/
+
+/* More about CSS  
+Multiple style sheets
+- If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used
+h1 {
+    color: red;
+}
+h1 {
+    color: blue ==> used
+}
+*/
+
+/* Cascading Order:
+ 1. Inline style (Inside an HTML element)
+ 2. External and internal style sheets (in the head section)
+ 3. Browser default
+*?

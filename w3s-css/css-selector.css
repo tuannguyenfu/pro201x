@@ -1,0 +1,17 @@
+/* CSS element Selector*/
+p {
+    text-align: center;
+    color: blue;
+}
+
+/* CSS ID Selector */
+#para1 {
+    text-align: center;
+    color: red;
+}
+
+/* CSS Class selector*/
+.center {
+    background-color: red;
+    color: black;
+}

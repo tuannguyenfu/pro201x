@@ -1,0 +1,14 @@
+/* 
+CSS Margins
+ - The CSS margin properties are used to create space around elements, outside of any defined borders
+
+ Margin - Individual Sides
+    CSS has properties for specifying the margin for each side of an element
+        -Margin-top
+        -Margin-right
+        -Margin-bottom
+        -Margin-left
+
+Example:
+    Margin: 10rem 20rem 30rem 40rem;
+*/
